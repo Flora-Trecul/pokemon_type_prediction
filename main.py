@@ -1,3 +1,3 @@
-from services import complete_pokedex
+from src.services import complete_pokedex
 
 complete_pokedex()
