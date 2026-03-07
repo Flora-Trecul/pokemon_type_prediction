@@ -49,12 +49,18 @@ def check_pokemon_count_api():
 	number_api_pokemons = response["count"]
 	return number_api_pokemons
 
+def create_dir_if_not_exists(dirpath):
+	if not os.path.exists(dirpath):
+		os.makedirs(dirpath)
+
 
 def complete_pokedex():
 	number_api_pokemons = check_pokemon_count_api()
 
 	path_pokemons = "src/data/raw/pokemons/"
 	path_species = "src/data/raw/species/"
+	create_dir_if_not_exists(path_pokemons)
+	create_dir_if_not_exists(path_species)
 
 	number_json_pokemons = count_json_files_in_dir(path_pokemons)
 	number_json_species = count_json_files_in_dir(path_species)
