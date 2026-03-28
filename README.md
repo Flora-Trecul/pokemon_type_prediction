@@ -22,15 +22,20 @@ J'ai également réfléchi à la manière d'extraire les données depuis la [Pok
 
 J'ai récupéré les données brutes en JSON pour chaque Pokémon, à deux endpoints :
 - /pokemon/{id}
-- /pokemopn-species/{id}
+- /pokemon-species/{id}
+
+J'ai ensuite extrait les informations pertinentes pour chaque Pokémon et j'ai généré un fichier CSV qui servira :
+- pour l'analyse de données avec Power BI
+- pour la modélisation avec Pandas et Scikit-Learn.
 
 ---
 ## Évolution du projet
 
 Le projet est en cours, ce fichier évoluera à mesure de ma progression.
 
-__Étape en cours :__ conversion des données brutes JSON en CSV exploitables avec Power BI et Pandas
+__Étape en cours :__ analyse et visualisation de données avec Power BI
 
 Étapes terminées :
 * réflexion sur la pertinence et la faisabilité du projet
 * extraction des données brutes depuis la PokéAPI (endpoits /pokemon et /pokemon-species)
+* extraction des données pertinentes dans les fichiers JSON et conversion en un seul CSV
